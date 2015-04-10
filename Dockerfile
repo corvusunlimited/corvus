@@ -6,6 +6,8 @@ ENV MB_JETTY_HOST 0.0.0.0
 ENV MB_JETTY_PORT 3000
 ENV DB_FILE_NAME /app/files/corvus
 
+VOLUME ["/app/files"]
+
 EXPOSE 3000
 
 RUN apt-get update && \
