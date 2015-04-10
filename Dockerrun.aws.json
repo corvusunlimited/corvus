@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "corvusunlimited/corvus",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/app/files",
+      "ContainerDirectory": "/app/files"
+    }
+  ],
+  "Logging": "/var/log/corvus"
+}
