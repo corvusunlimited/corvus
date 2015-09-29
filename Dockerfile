@@ -1,7 +1,5 @@
-FROM ubuntu:trusty
-ENV LC_ALL C
-ENV DEBIAN_FRONTEND noninteractive
-ENV DEBCONF_NONINTERACTIVE_SEEN true
+FROM airdock/oracle-jdk:1.8
+
 ENV MB_JETTY_HOST 0.0.0.0
 ENV MB_JETTY_PORT 3000
 ENV DB_FILE_NAME /app/files/corvus
